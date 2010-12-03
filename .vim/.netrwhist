@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/shared/home/ghalford/cvs_src/work/ti/db/informix/data'
+let g:netrw_dirhist_2='/shared/home/ghalford/cvs_src/work/ti/tcl/dbv'
+let g:netrw_dirhist_3='/shared/home/ghalford/cvs_src/work/ti/tcl'
+let g:netrw_dirhist_4='/shared/home/ghalford/cvs_src/work/ti'
+let g:netrw_dirhist_5='/shared/home/ghalford/cvs_src/work/ti/html'
+let g:netrw_dirhist_6='/shared/home/ghalford/cvs_src/work/ti/html/dbv'

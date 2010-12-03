@@ -1,0 +1,114 @@
+" Use Vim settings, rather then Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
+set history=50        " keep 50 lines of command line history
+set hlsearch        " Switch on search pattern highlighting.
+set incsearch        " Switch on incremental search
+set ruler             " show the cursor position all the time
+set number            " Turn on line numbering
+set ignorecase
+
+syntax on             " Switch on syntax highlighting if it wasn't on yet.
+
+
+
+set backspace=indent,eol,start     " allow backspacing over everything in insert mode
+colorscheme desert            " Set the colourschemee
+
+set diffopt=vertical
+set tabstop=4
+set shiftwidth=4
+
+
+
+helptags ~/.vim/doc
+" Enable file type detection.
+  " Use the default filetype settings, so that mail gets 'tw' set to 72,
+  " 'cindent' is on in C files, etc.
+  " Also load indent files, to automatically do language-dependent indenting.
+filetype plugin indent on
+
+" Turn off gui toolbar
+set guioptions-=T
+
+" Only do this part when compiled with support for autocommands.
+if has("autocmd")
+
+  " Put these in an autocmd group, so that we can delete them easily.
+  augroup vimrcEx
+  au!
+  " For all text files set 'textwidth' to 78 characters.
+  autocmd FileType text setlocal textwidth=78
+
+  " When editing a file, always jump to the last known cursor position.
+  " Don't do it when the position is invalid or when inside an event handler
+  " (happens when dropping a file on gvim).
+  autocmd BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal g`\"" |
+    \ endif
+
+  augroup END
+else
+
+  set autoindent        " always set autoindenting on
+
+endif " has("autocmd")
+
+" Highlight characters over the 100 character line length
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%99v.\+/
+
+" Set an orange cursor in insert mode, and a red cursor otherwise.
+" Works at least for xterm and rxvt terminals.
+" Does not work for gnome terminal, konsole, xfce4-terminal.
+if &term =~ "xterm\\|rxvt"
+  :silent !echo -ne "\033]12;orange\007"
+  let &t_SI = "\033]12;white\007"
+  let &t_EI = "\033]12;orange\007"
+  autocmd VimLeave * :!echo -ne "\033]12;orange\007"
+endif
+         
+
+"""""""""""""
+"Vim Mappings
+"""""""""""""
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+
+" Turn spell check on and off
+map <F2> :NERDTreeToggle<cr>
+
+" Turn spell check on and off
+map <F3> :TlistToggle<cr>
+
+" Turn spell check on and off
+map <F4> :VCSVimDiff<cr>
+
+" Turn spell check on and off
+map <F7> :setlocal spell spelllang=en_gb<cr>
+map <F8> :setlocal spell spelllang=<cr>
+
+"Turn on indenting
+map <F5> :set foldmethod=indent<cr>
+
+" Maps Alt-[h,j,k,l] to resizing a window split
+map <silent> <A-Left> <C-w><
+map <silent> <A-Down> <C-W>-
+map <silent> <A-Up> <C-W>+
+map <silent> <A-Right> <C-w>>
+
+" Maps Ctrl-[h,j,k,l] to changing the selected window 
+noremap <C-up>  <C-W>j
+noremap <C-down>  <C-W>k
+noremap <C-left>  <C-W>h
+noremap <C-right>  <C-W>l
+
+" Maps Alt-[s.v] to horizontal and vertical split respectively
+map <silent> <C-c> :split<CR>
+map <silent> <C-x> :vsplit<CR> 
+
+nmap <F9> :set list!<CR>
+
+
