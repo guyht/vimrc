@@ -111,4 +111,17 @@ map <silent> <C-x> :vsplit<CR>
 
 nmap <F9> :set list!<CR>
 
+if has("gui_running")
+	if has("gui_gtk2")
+		set guifont=Courier\ New\ 10
+	elseif has("gui_photon")
+		set guifont=Courier\ New:s10
+	elseif has("gui_kde")
+		set guifont=Courier\ New/10/-1/5/50/0/0/0/1/0
+	elseif has("x11")
+		set guifont=-*-courier-medium-r-normal-*-*-180-*-*-m-*-*
+	else
+		set guifont=Courier_New:h1o:cDEFAULT
+	endif
+endif
 
