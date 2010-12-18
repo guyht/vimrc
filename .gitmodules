@@ -1,3 +1,9 @@
 [submodule ".vim/nerdtree"]
 	path = .vim/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule ".vim/bufexplorer"]
+	path = .vim/bufexplorer
+	url = https://github.com/vim-scripts/bufexplorer.zip.git
+[submodule ".vim/taglist"]
+	path = .vim/taglist
+	url = https://github.com/vim-scripts/taglist.vim.git
