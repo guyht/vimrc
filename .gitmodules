@@ -1,9 +1,18 @@
-[submodule ".vim/nerdtree"]
-	path = .vim/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule ".vim/bufexplorer"]
-	path = .vim/bufexplorer
+[submodule ".vim/pathogen"]
+	path = .vim/pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule ".vim/bundles/nerdree"]
+	path = .vim/bundles/nerdree
+	url = https://github.com/vim-scripts/The-NERD-tree.git
+[submodule ".vim/bundle/bufexplorer"]
+	path = .vim/bundle/bufexplorer
 	url = https://github.com/vim-scripts/bufexplorer.zip.git
-[submodule ".vim/taglist"]
-	path = .vim/taglist
+[submodule ".vim/bundle/taglist"]
+	path = .vim/bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule ".vim/bundle/vimwiki"]
+	path = .vim/bundle/vimwiki
+	url = https://github.com/vim-scripts/vimwiki.git
+[submodule ".vim/bundle/vimtask"]
+	path = .vim/bundle/vimtask
+	url = https://github.com/samsonw/vim-task.git

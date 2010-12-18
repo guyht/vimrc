@@ -1,3 +1,10 @@
+" Needed on some linux distros.
+" " see
+" http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html
+filetype off 
+call pathogen#helptags()
+call pathogen#runtime_append_all_bundles()
+
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -22,7 +29,7 @@ set shiftwidth=4
 
 
 
-helptags ~/.vim/doc
+"helptags ~/.vim/doc
 " Enable file type detection.
   " Use the default filetype settings, so that mail gets 'tw' set to 72,
   " 'cindent' is on in C files, etc.
@@ -122,3 +129,6 @@ if has("gui_running")
 	endif
 endif
 
+" Vim Task
+inoremap <silent> <buffer> <C-D-CR> <ESC>:call Toggle_task_status()<CR>i
+noremap <silent> <buffer> <leader>t :call Toggle_task_status()<CR>
