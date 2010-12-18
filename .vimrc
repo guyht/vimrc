@@ -84,9 +84,6 @@ map <F2> :NERDTreeToggle<cr>
 map <F3> :TlistToggle<cr>
 
 " Turn spell check on and off
-map <F4> :VCSVimDiff<cr>
-
-" Turn spell check on and off
 map <F7> :setlocal spell spelllang=en_gb<cr>
 map <F8> :setlocal spell spelllang=<cr>
 
