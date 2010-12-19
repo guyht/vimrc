@@ -16,6 +16,3 @@
 [submodule ".vim/bundle/vimtask"]
 	path = .vim/bundle/vimtask
 	url = https://github.com/samsonw/vim-task.git
-[submodule ".giki"]
-	path = .giki
-	url = https://guyht@github.com/guyht/giki.git
