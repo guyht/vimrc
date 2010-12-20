@@ -129,6 +129,10 @@ if has("gui_running")
 	endif
 endif
 
+" Vim Wiki - Work Branch - Add 2nd wiki
+let g:vimwiki_list = [{'path' : '~/vimwiki/', 'path_html', '~/vimwiki_html/'},
+					\ {'path' : '~/vimworkwiki/', 'path_html', '~/vimworkwiki_html/'}]
+
 " Vim Task
 inoremap <silent> <buffer> <C-D-CR> <ESC>:call Toggle_task_status()<CR>i
 noremap <silent> <buffer> <leader>t :call Toggle_task_status()<CR>
