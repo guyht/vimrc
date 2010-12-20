@@ -111,7 +111,6 @@ noremap <C-right>  <C-W>l
 
 " Maps Alt-[s.v] to horizontal and vertical split respectively
 map <silent> <C-c> :split<CR>
-map <silent> <C-x> :vsplit<CR> 
 
 nmap <F9> :set list!<CR>
 
