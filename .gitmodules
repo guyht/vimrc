@@ -16,3 +16,6 @@
 [submodule ".vim/bundle/vimwiki"]
 	path = .vim/bundle/vimwiki
 	url = https://guyht@github.com/guyht/vimwiki.git
+[submodule ".vim/bundle/vimtask"]
+	path = .vim/bundle/vimtask
+	url = https://guyht@github.com/guyht/vim-task.git
