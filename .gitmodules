@@ -4,9 +4,6 @@
 [submodule ".vim/bundle/taglist"]
 	path = .vim/bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
-[submodule ".vim/bundle/vimtask"]
-	path = .vim/bundle/vimtask
-	url = https://github.com/samsonw/vim-task.git
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
 	url = https://github.com/vim-scripts/The-NERD-tree.git
@@ -19,3 +16,6 @@
 [submodule ".vim/bundle/vimtask"]
 	path = .vim/bundle/vimtask
 	url = https://guyht@github.com/guyht/vim-task.git
+[submodule ".vim/bundle/vimfugitive"]
+	path = .vim/bundle/vimfugitive
+	url = https://github.com/tpope/vim-fugitive.git
