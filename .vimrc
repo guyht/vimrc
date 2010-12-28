@@ -98,16 +98,16 @@ map <F8> :setlocal spell spelllang=<cr>
 map <F5> :set foldmethod=indent<cr>
 
 " Maps Alt-[h,j,k,l] to resizing a window split
-map <silent> <A-Left> <C-w><
-map <silent> <A-Down> <C-W>-
-map <silent> <A-Up> <C-W>+
-map <silent> <A-Right> <C-w>>
+map <silent> <S-Left> <C-w><
+map <silent> <S-Down> <C-W>-
+map <silent> <S-Up> <C-W>+
+map <silent> <S-Right> <C-w>>
 
 " Maps Ctrl-[h,j,k,l] to changing the selected window 
-noremap <C-up>  <C-W>j
-noremap <C-down>  <C-W>k
-noremap <C-left>  <C-W>h
-noremap <C-right>  <C-W>l
+noremap <C-j>  <C-W>j
+noremap <C-k>  <C-W>k
+noremap <C-h>  <C-W>h
+noremap <C-l>  <C-W>l
 
 " Maps Alt-[s.v] to horizontal and vertical split respectively
 map <silent> <C-c> :split<CR>
