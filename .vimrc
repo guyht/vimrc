@@ -139,3 +139,7 @@ set tags+=$HOME."/vimtags/tags"
 " Vim Task
 inoremap <silent> <buffer> <C-D-CR> <ESC>:call Toggle_task_status()<CR>i
 noremap <silent> <buffer> <leader>t :call Toggle_task_status()<CR>
+
+" Map <Esc> to jj
+:map! jj <esc>
+
