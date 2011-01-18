@@ -143,3 +143,6 @@ noremap <silent> <buffer> <leader>t :call Toggle_task_status()<CR>
 
 " Change pmenu colour scheme
 :highlight Pmenu guibg=brown gui=bold
+
+" Add tags folder
+:set tags+=$HOME/.vimtags/tags
