@@ -143,3 +143,5 @@ noremap <silent> <buffer> <leader>t :call Toggle_task_status()<CR>
 " Map <Esc> to jj
 :map! jj <esc>
 
+" Change pmenu colour scheme
+:highlight Pmenu guibg=brown gui=bold
