@@ -146,3 +146,9 @@ noremap <silent> <buffer> <leader>t :call Toggle_task_status()<CR>
 
 " Add tags folder
 :set tags+=$HOME/.vimtags/tags
+
+let g:NERDTreeHijackNetrw = 0
+
+" Show trailing whitepace and spaces before a tab:
+:highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+:autocmd BufWinEnter * match ExtraWhitespace /\v(\s+$)|( +\ze\t)|for(\s)\(|if(\s)\(/
