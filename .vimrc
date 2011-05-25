@@ -129,8 +129,7 @@ if has("gui_running")
 endif
 
 " Vim Wiki - Work Branch - Add 2nd wiki
-let g:vimwiki_list = [{'path' : '~/vimworkwiki/', 'path_html' : '~/vimworkwiki_html/'},
-			\ {'path' : '~/vimwiki/', 'path_html' : '~/vimwiki_html/'}]
+let g:vimwiki_list = [{'path' : '~/vimwiki/', 'path_html' : '~/vimwiki_html/'}]
 
 
 " Tags file
