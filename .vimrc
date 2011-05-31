@@ -131,6 +131,7 @@ endif
 " Vim Wiki - Work Branch - Add 2nd wiki
 let g:vimwiki_list = [{'path' : '~/vimwiki/', 'path_html' : '~/vimwiki_html/'}]
 
+
 " Tags file
 set tags+=$HOME."/vimtags/tags"
 
@@ -141,3 +142,14 @@ noremap <silent> <buffer> <leader>t :call Toggle_task_status()<CR>
 " Map <Esc> to jj
 :map! jj <esc>
 
+" Change pmenu colour scheme
+:highlight Pmenu guibg=brown gui=bold
+
+" Add tags folder
+:set tags+=$HOME/.vimtags/tags
+
+let g:NERDTreeHijackNetrw = 0
+
+" Show trailing whitepace and spaces before a tab:
+:highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+:autocmd BufWinEnter * match ExtraWhitespace /\v(\s+$)|( +\ze\t)|for(\s)\(|if(\s)\(/
