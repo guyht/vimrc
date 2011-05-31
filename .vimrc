@@ -26,7 +26,7 @@ colorscheme desert            " Set the colourschemee
 set diffopt=vertical
 set tabstop=4
 set shiftwidth=4
-
+set expandtab
 
 
 "helptags ~/.vim/doc
