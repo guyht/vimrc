@@ -1,7 +1,7 @@
 " Needed on some linux distros.
 " " see
 " http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html
-filetype off 
+filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
@@ -76,7 +76,7 @@ if &term =~ "xterm\\|rxvt"
   let &t_EI = "\033]12;orange\007"
   autocmd VimLeave * :!echo -ne "\033]12;orange\007"
 endif
-         
+
 
 """""""""""""
 "Vim Mappings
@@ -103,7 +103,7 @@ map <silent> <A-Down> <C-W>-
 map <silent> <A-Up> <C-W>+
 map <silent> <A-Right> <C-w>>
 
-" Maps Ctrl-[h,j,k,l] to changing the selected window 
+" Maps Ctrl-[h,j,k,l] to changing the selected window
 noremap <C-up>  <C-W>j
 noremap <C-down>  <C-W>k
 noremap <C-left>  <C-W>h
@@ -128,16 +128,8 @@ if has("gui_running")
 	endif
 endif
 
-" Vim Wiki - Work Branch - Add 2nd wiki
-let g:vimwiki_list = [{'path' : '~/vimwiki/', 'path_html' : '~/vimwiki_html/'}]
-
-
 " Tags file
 set tags+=$HOME."/vimtags/tags"
-
-" Vim Task
-inoremap <silent> <buffer> <C-D-CR> <ESC>:call Toggle_task_status()<CR>i
-noremap <silent> <buffer> <leader>t :call Toggle_task_status()<CR>
 
 " Map <Esc> to jj
 :map! jj <esc>
