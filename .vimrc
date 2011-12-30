@@ -18,8 +18,6 @@ set ignorecase
 
 syntax on             " Switch on syntax highlighting if it wasn't on yet.
 
-
-
 set backspace=indent,eol,start     " allow backspacing over everything in insert mode
 colorscheme desert            " Set the colourschemee
 
@@ -84,16 +82,11 @@ endif
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 
-" Turn spell check on and off
 map <F2> :NERDTreeToggle<cr>
-
-" Turn spell check on and off
 map <F3> :TlistToggle<cr>
-
 " Turn spell check on and off
 map <F7> :setlocal spell spelllang=en_gb<cr>
 map <F8> :setlocal spell spelllang=<cr>
-
 "Turn on indenting
 map <F5> :set foldmethod=indent<cr>
 
