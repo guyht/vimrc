@@ -128,10 +128,6 @@ if has("gui_running")
 	endif
 endif
 
-" Vim Wiki - Work Branch - Add 2nd wiki
-let g:vimwiki_list = [{'path' : '~/vimwiki/', 'path_html' : '~/vimwiki_html/'}]
-
-
 " Tags file
 set tags+=$HOME."/vimtags/tags"
 
@@ -144,9 +140,6 @@ noremap <silent> <buffer> <leader>t :call Toggle_task_status()<CR>
 
 " Change pmenu colour scheme
 :highlight Pmenu guibg=brown gui=bold
-
-" Add tags folder
-:set tags+=$HOME/.vimtags/tags
 
 let g:NERDTreeHijackNetrw = 0
 
