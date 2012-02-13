@@ -22,3 +22,9 @@
 [submodule ".vim/bundle/grep"]
 	path = .vim/bundle/grep
 	url = https://github.com/vim-scripts/grep.vim.git
+[submodule "netrw.vim"]
+	path = netrw.vim
+	url = https://github.com/vim-scripts/netrw.vim.git
+[submodule ".vim/bundle/netrw"]
+	path = .vim/bundle/netrw
+	url = https://github.com/vim-scripts/netrw.vim.git
