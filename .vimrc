@@ -138,7 +138,7 @@ set tags+=$HOME."/vimtags/tags"
 :highlight Pmenu guibg=brown gui=bold
 
 " Add tags folder
-:set tags+=$HOME/.vimtags/tags
+:set tags+=~/.tags
 
 let g:NERDTreeHijackNetrw = 0
 
