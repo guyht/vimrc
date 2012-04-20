@@ -25,6 +25,8 @@ set diffopt=vertical
 set tabstop=4
 set shiftwidth=4
 
+" Spaces for tabs
+set expandtab
 
 
 "helptags ~/.vim/doc
