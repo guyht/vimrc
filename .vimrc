@@ -29,6 +29,9 @@ set shiftwidth=4
 " Always show status line
 set laststatus=2
 
+" Set encoding
+set encoding=utf-8
+
 "helptags ~/.vim/doc
 " Enable file type detection.
   " Use the default filetype settings, so that mail gets 'tw' set to 72,
@@ -66,16 +69,6 @@ endif " has("autocmd")
 " Highlight characters over the 100 character line length
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%99v.\+/
-
-" Set an orange cursor in insert mode, and a red cursor otherwise.
-" Works at least for xterm and rxvt terminals.
-" Does not work for gnome terminal, konsole, xfce4-terminal.
-if &term =~ "xterm\\|rxvt"
-  :silent !echo -ne "\033]12;orange\007"
-  let &t_SI = "\033]12;white\007"
-  let &t_EI = "\033]12;orange\007"
-  autocmd VimLeave * :!echo -ne "\033]12;orange\007"
-endif
 
 
 """""""""""""
@@ -171,3 +164,4 @@ endfunction
 
 nmap <silent> <leader>l :call ToggleList("Location List", 'l')<CR>
 nmap <silent> <leader>e :call ToggleList("Quickfix List", 'c')<CR>
+
