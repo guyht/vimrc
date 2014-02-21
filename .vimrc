@@ -26,6 +26,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" Spaces for tabs
+set expandtab
+
 
 " Always show status line
 set laststatus=2
